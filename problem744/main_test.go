@@ -21,7 +21,7 @@ func TestNextGreatestLetter(t *testing.T) {
 		{
 			letters: []byte{'x', 'x', 'y', 'y'},
 			target:  'z',
-			want:    'z',
+			want:    'x',
 		},
 	}
 

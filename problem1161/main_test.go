@@ -58,3 +58,17 @@ func TestMaxLevelSum(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkMaxLevelSumDfs(b *testing.B) {
+	root := construct([]interface{}{989, nil, 10250, 98693, -89388, nil, nil, nil, -32127})
+	for i := 0; i < b.N; i++ {
+		maxLevelSum(root)
+	}
+}
+
+func BenchmarkMaxLevelSumBfs(b *testing.B) {
+	root := construct([]interface{}{989, nil, 10250, 98693, -89388, nil, nil, nil, -32127})
+	for i := 0; i < b.N; i++ {
+		maxLevelSum2(root)
+	}
+}

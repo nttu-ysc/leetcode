@@ -35,7 +35,7 @@ func TestMakeArrayIncreasing(t *testing.T) {
 		arr1 = append(arr1, test.arr1...)
 		arr2 = append(arr2, test.arr2...)
 		if got := makeArrayIncreasing(test.arr1, test.arr2); got != test.want {
-			t.Errorf("Test failed. The input arr1=%v arr2=%v is excepted to %d but return %d", arr1, arr2, test.want, got)
+			t.Errorf("Test failed. The input arr1=%v arr2=%v is expected to %d but return %d", arr1, arr2, test.want, got)
 		}
 	}
 }

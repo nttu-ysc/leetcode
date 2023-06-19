@@ -38,7 +38,7 @@ func TestGenerate(t *testing.T) {
 					break
 				}
 				if got[i][j] != test.want[i][j] {
-					t.Errorf("Test failed. The numRows = %d is excepted to %v but return %v", test.numRows, test.want, got)
+					t.Errorf("Test failed. The numRows = %d is expected to %v but return %v", test.numRows, test.want, got)
 					break
 				}
 			}

@@ -9,22 +9,22 @@ func TestTwoSum(t *testing.T) {
 	tests := []struct {
 		nums     []int
 		target   int
-		excepted []int
+		expected []int
 	}{
 		{
 			nums:     []int{2, 7, 11, 15},
 			target:   9,
-			excepted: []int{0, 1},
+			expected: []int{0, 1},
 		},
 		{
 			nums:     []int{3, 2, 4},
 			target:   6,
-			excepted: []int{1, 2},
+			expected: []int{1, 2},
 		},
 		{
 			nums:     []int{3, 3},
 			target:   6,
-			excepted: []int{0, 1},
+			expected: []int{0, 1},
 		},
 	}
 
@@ -35,8 +35,8 @@ func TestTwoSum(t *testing.T) {
 		})
 
 		for i := 0; i < len(res); i++ {
-			if res[i] != test.excepted[i] {
-				t.Errorf("Test failed. The input nums=%v, target=%d is excepted to %v, but response %v", test.nums, test.target, test.excepted, res)
+			if res[i] != test.expected[i] {
+				t.Errorf("Test failed. The input nums=%v, target=%d is expected to %v, but response %v", test.nums, test.target, test.expected, res)
 				goto e
 			}
 		}

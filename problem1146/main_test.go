@@ -52,7 +52,7 @@ func TestSnapshotArray(t *testing.T) {
 			case "get":
 				want := test.want[k].(int)
 				if got := arr.Get(test.inputs[k][0], test.inputs[k][1]); got != want {
-					t.Errorf("Test failed. The index=%d snap_id=%d is excepted to %d but return %d", test.inputs[k][0], test.inputs[k][1], want, got)
+					t.Errorf("Test failed. The index=%d snap_id=%d is expected to %d but return %d", test.inputs[k][0], test.inputs[k][1], want, got)
 				}
 			}
 		}

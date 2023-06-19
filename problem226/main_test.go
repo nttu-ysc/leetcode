@@ -28,7 +28,7 @@ func TestInvertTree(t *testing.T) {
 		bfs(gotTree, &got)
 		for i := 0; i < min(len(got), len(test.want)); i++ {
 			if got[i] != test.want[i] {
-				t.Errorf("Test failed. the input root=%v is excepted to %v but return %v", test.
+				t.Errorf("Test failed. the input root=%v is expected to %v but return %v", test.
 					root, test.want, got)
 				break
 			}

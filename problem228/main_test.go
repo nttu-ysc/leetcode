@@ -31,7 +31,7 @@ func TestSummaryRanges(t *testing.T) {
 
 		for i := 0; i < len(got); i++ {
 			if got[i] != test.want[i] {
-				t.Errorf("Test failed. The nums=%v is excepted to %v but return %v", test.nums, test.want, got)
+				t.Errorf("Test failed. The nums=%v is expected to %v but return %v", test.nums, test.want, got)
 				break
 			}
 		}

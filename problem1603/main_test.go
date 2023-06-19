@@ -9,29 +9,29 @@ func TestParkingSystem(t *testing.T) {
 		init    []int
 		actions []struct {
 			addCar   int
-			excepted bool
+			expected bool
 		}
 	}{
 		{init: []int{1, 1, 0},
 			actions: []struct {
 				addCar   int
-				excepted bool
+				expected bool
 			}{
 				{
 					addCar:   1,
-					excepted: true,
+					expected: true,
 				},
 				{
 					addCar:   2,
-					excepted: true,
+					expected: true,
 				},
 				{
 					addCar:   3,
-					excepted: false,
+					expected: false,
 				},
 				{
 					addCar:   1,
-					excepted: false,
+					expected: false,
 				},
 			},
 		},
@@ -40,8 +40,8 @@ func TestParkingSystem(t *testing.T) {
 	for _, test := range tests {
 		parkingSystem := Constructor(test.init[0], test.init[1], test.init[2])
 		for _, v := range test.actions {
-			if res := parkingSystem.AddCar(v.addCar); res != v.excepted {
-				t.Errorf("Test failed. The input %v is excepted to %t but return %t", v.addCar, v.excepted, res)
+			if res := parkingSystem.AddCar(v.addCar); res != v.expected {
+				t.Errorf("Test failed. The input %v is expected to %t but return %t", v.addCar, v.expected, res)
 			}
 		}
 	}

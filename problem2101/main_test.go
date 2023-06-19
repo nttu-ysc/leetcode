@@ -35,7 +35,7 @@ func TestMaximumDetonation(t *testing.T) {
 
 	for _, test := range tests {
 		if got := maximumDetonation(test.bombs); got != test.want {
-			t.Errorf("Test failed. The intput bombs=%v is excepted to %d but return %d", test.bombs, test.want, got)
+			t.Errorf("Test failed. The intput bombs=%v is expected to %d but return %d", test.bombs, test.want, got)
 		}
 	}
 }

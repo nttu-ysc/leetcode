@@ -8,7 +8,7 @@ func TestKthLargest(t *testing.T) {
 		k    int
 		add  []struct {
 			input    int
-			excepted int
+			expected int
 		}
 	}{
 		{
@@ -16,27 +16,27 @@ func TestKthLargest(t *testing.T) {
 			k:    3,
 			add: []struct {
 				input    int
-				excepted int
+				expected int
 			}{
 				{
 					input:    3,
-					excepted: 4,
+					expected: 4,
 				},
 				{
 					input:    5,
-					excepted: 5,
+					expected: 5,
 				},
 				{
 					input:    10,
-					excepted: 5,
+					expected: 5,
 				},
 				{
 					input:    9,
-					excepted: 8,
+					expected: 8,
 				},
 				{
 					input:    4,
-					excepted: 8,
+					expected: 8,
 				},
 			},
 		},
@@ -45,8 +45,8 @@ func TestKthLargest(t *testing.T) {
 	for _, test := range tests {
 		kl := Constructor(test.k, test.nums)
 		for _, v := range test.add {
-			if res := kl.Add(v.input); res != v.excepted {
-				t.Errorf("Test failed. The input nums=%v, k=%d, add(%d) is excepted to %d but response %d", test.nums, test.k, v.input, v.excepted, res)
+			if res := kl.Add(v.input); res != v.expected {
+				t.Errorf("Test failed. The input nums=%v, k=%d, add(%d) is expected to %d but response %d", test.nums, test.k, v.input, v.expected, res)
 			}
 		}
 	}

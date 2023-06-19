@@ -27,7 +27,7 @@ func TestNextGreatestLetter(t *testing.T) {
 
 	for _, test := range tests {
 		if got := nextGreatestLetter(test.letters, test.target); got != test.want {
-			t.Errorf("Test failed. The input letters=%v target=%v  is excepted to %v but return %v", test.letters, test.target, test.want, got)
+			t.Errorf("Test failed. The input letters=%v target=%v  is expected to %v but return %v", test.letters, test.target, test.want, got)
 		}
 	}
 }

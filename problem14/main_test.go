@@ -27,7 +27,7 @@ func TestLongestCommonPrefix(t *testing.T) {
 
 	for _, test := range tests {
 		if got := longestCommonPrefix(test.strs); got != test.want {
-			t.Errorf("Test failed. the input strs=%v is excepted to \"%s\" but return \"%s\"", test.strs, test.want, got)
+			t.Errorf("Test failed. the input strs=%v is expected to \"%s\" but return \"%s\"", test.strs, test.want, got)
 		}
 	}
 

@@ -40,7 +40,7 @@ func TestNumOfWays(t *testing.T) {
 	for _, test := range tests {
 		t.Logf("start...")
 		if got := numOfWays(test.nums); got != test.want {
-			t.Errorf("Test failed. The input nums=%v is excepted to %d but return %d", test.nums, test.want, got)
+			t.Errorf("Test failed. The input nums=%v is expected to %d but return %d", test.nums, test.want, got)
 		}
 	}
 }

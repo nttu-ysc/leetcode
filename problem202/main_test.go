@@ -19,7 +19,7 @@ func TestIsHappy(t *testing.T) {
 
 	for _, test := range tests {
 		if got := isHappy(test.n); test.want != got {
-			t.Errorf("Test failed. The input n=%d is excepted to %t but return %t", test.n, test.want, got)
+			t.Errorf("Test failed. The input n=%d is expected to %t but return %t", test.n, test.want, got)
 		}
 	}
 }

@@ -50,7 +50,7 @@ func TestMaxDepth(t *testing.T) {
 	for _, test := range tests {
 		root := constructTreeNode(test.root)
 		if got := maxDepth(root); got != test.want {
-			t.Errorf("Test failed. The root = %v is excepted to %d but return %d", test.root, test.want, got)
+			t.Errorf("Test failed. The root = %v is expected to %d but return %d", test.root, test.want, got)
 		}
 	}
 }

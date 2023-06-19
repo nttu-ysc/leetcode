@@ -23,7 +23,7 @@ func TestContainsDuplicate(t *testing.T) {
 
 	for _, test := range tests {
 		if got := containsDuplicate(test.nums); got != test.want {
-			t.Errorf("Test failed. The input nums=%v is excepted to %t but return %t", test.nums, test.want, got)
+			t.Errorf("Test failed. The input nums=%v is expected to %t but return %t", test.nums, test.want, got)
 		}
 	}
 }

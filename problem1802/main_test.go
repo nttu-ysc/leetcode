@@ -25,7 +25,7 @@ func TestMaxValue(t *testing.T) {
 
 	for _, test := range tests {
 		if got := maxValue(test.n, test.index, test.maxSum); got != test.want {
-			t.Errorf("Test failed. The n=%d index=%d maxSum=%d is excepted tot %d but return %d", test.n, test.index, test.maxSum, test.want, got)
+			t.Errorf("Test failed. The n=%d index=%d maxSum=%d is expected tot %d but return %d", test.n, test.index, test.maxSum, test.want, got)
 		}
 	}
 }

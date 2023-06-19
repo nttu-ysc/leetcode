@@ -42,7 +42,7 @@ func TestNumOfMinutes(t *testing.T) {
 
 	for _, test := range tests {
 		if got := numOfMinutes(test.n, test.headID, test.manager, test.informTime); got != test.want {
-			t.Errorf("Test failed. The input n=%d headID=%d manager=%v informTime=%v is excepted to %d but return %d", test.n, test.headID, test.manager, test.informTime, test.want, got)
+			t.Errorf("Test failed. The input n=%d headID=%d manager=%v informTime=%v is expected to %d but return %d", test.n, test.headID, test.manager, test.informTime, test.want, got)
 		}
 	}
 

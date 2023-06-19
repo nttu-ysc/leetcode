@@ -50,7 +50,7 @@ func TestMinimumDifference(t *testing.T) {
 	for _, test := range tests {
 		root := construct(test.root)
 		if got := getMinimumDifference(root); got != test.want {
-			t.Errorf("Test failed. The input root=%v is excepted to %d but return %d", test.root, test.want, got)
+			t.Errorf("Test failed. The input root=%v is expected to %d but return %d", test.root, test.want, got)
 		}
 	}
 }

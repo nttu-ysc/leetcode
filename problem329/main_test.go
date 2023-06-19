@@ -44,7 +44,7 @@ func TestLongestIncreasingPath(t *testing.T) {
 
 	for _, test := range tests {
 		if got := longestIncreasingPath(test.matrix); got != test.want {
-			t.Errorf("Test failed. The input matrix=%v is excepted to %d but return %d", test.matrix, test.want, got)
+			t.Errorf("Test failed. The input matrix=%v is expected to %d but return %d", test.matrix, test.want, got)
 		}
 	}
 }

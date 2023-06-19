@@ -19,7 +19,7 @@ func TestCanMakeArithmeticProgression(t *testing.T) {
 
 	for _, test := range tests {
 		if got := canMakeArithmeticProgression(test.arr); got != test.want {
-			t.Errorf("Test failed. The input arr=%v is excepted to %t, but return %t", test.arr, test.want, got)
+			t.Errorf("Test failed. The input arr=%v is expected to %t, but return %t", test.arr, test.want, got)
 		}
 	}
 }

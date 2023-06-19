@@ -34,7 +34,7 @@ func TestShortestPathBinaryMatrix(t *testing.T) {
 
 	for _, test := range tests {
 		if got := shortestPathBinaryMatrix(test.grid); got != test.want {
-			t.Errorf("Test failed. the input grid=%v is excepted to %d, but get %d", test.grid, test.want, got)
+			t.Errorf("Test failed. the input grid=%v is expected to %d, but get %d", test.grid, test.want, got)
 		}
 	}
 }

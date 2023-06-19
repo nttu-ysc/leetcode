@@ -29,7 +29,7 @@ func TestIsBipartite(t *testing.T) {
 
 	for _, test := range tests {
 		if got := isBipartite(test.graph); got != test.want {
-			t.Errorf("Test failed. The input graph=%v is excepted to %t, but return %t", test.graph, test.want, got)
+			t.Errorf("Test failed. The input graph=%v is expected to %t, but return %t", test.graph, test.want, got)
 		}
 	}
 }

@@ -23,7 +23,7 @@ func TestReverseWords(t *testing.T) {
 
 	for _, test := range tests {
 		if got := reverseWords(test.s); got != test.want {
-			t.Errorf("Test failed. The input s=\"%s\" is excepted to \"%s\" but return \"%s\"", test.s, test.want, got)
+			t.Errorf("Test failed. The input s=\"%s\" is expected to \"%s\" but return \"%s\"", test.s, test.want, got)
 		}
 	}
 }

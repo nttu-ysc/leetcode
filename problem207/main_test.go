@@ -38,7 +38,7 @@ func TestCanFinish(t *testing.T) {
 
 	for _, test := range tests {
 		if got := canFinish(test.numCourses, test.prerequisites); got != test.want {
-			t.Errorf("Tets failed. The input numCourses=%d prerequisties = %v is excepted to %t but return %t", test.numCourses, test.prerequisites, test.want, got)
+			t.Errorf("Tets failed. The input numCourses=%d prerequisties = %v is expected to %t but return %t", test.numCourses, test.prerequisites, test.want, got)
 		}
 	}
 }

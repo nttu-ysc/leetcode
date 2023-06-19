@@ -28,7 +28,7 @@ func TestEqualPairs(t *testing.T) {
 
 	for _, test := range tests {
 		if got := equalPairs(test.grid); got != test.want {
-			t.Errorf("Test failed. The grid = %v is excepted to %d but return %d", test.grid, test.want, got)
+			t.Errorf("Test failed. The grid = %v is expected to %d but return %d", test.grid, test.want, got)
 		}
 	}
 }

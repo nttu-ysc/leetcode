@@ -7,7 +7,7 @@ func TestOddCells(t *testing.T) {
 		m        int
 		n        int
 		indices  [][]int
-		excepted int
+		expected int
 	}{
 		{
 			m: 2,
@@ -16,7 +16,7 @@ func TestOddCells(t *testing.T) {
 				{0, 1},
 				{1, 1},
 			},
-			excepted: 6,
+			expected: 6,
 		},
 		{
 			m: 2,
@@ -25,13 +25,13 @@ func TestOddCells(t *testing.T) {
 				{1, 1},
 				{0, 0},
 			},
-			excepted: 0,
+			expected: 0,
 		},
 	}
 
 	for _, test := range tests {
-		if res := oddCells(test.m, test.n, test.indices); res != test.excepted {
-			t.Errorf("Test failed. The input m = %d, n = %d, indices = %v is excepted to %d, but response %d", test.m, test.n, test.indices, test.excepted, res)
+		if res := oddCells(test.m, test.n, test.indices); res != test.expected {
+			t.Errorf("Test failed. The input m = %d, n = %d, indices = %v is expected to %d, but response %d", test.m, test.n, test.indices, test.expected, res)
 		}
 	}
 }

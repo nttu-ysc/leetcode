@@ -23,7 +23,7 @@ func TestFineMin(t *testing.T) {
 
 	for _, test := range tests {
 		if got := findMin(test.nums); got != test.want {
-			t.Errorf("Test failed. the input nums=%v is excepted to %d but return %d", test.nums, test.want, got)
+			t.Errorf("Test failed. the input nums=%v is expected to %d but return %d", test.nums, test.want, got)
 		}
 	}
 }

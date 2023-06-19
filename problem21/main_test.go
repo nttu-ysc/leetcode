@@ -41,7 +41,7 @@ func TestMergeTwoLists(t *testing.T) {
 
 		for i := 0; i < len(got); i++ {
 			if got[i] != test.want[i] {
-				t.Errorf("Test failed. The input list1 = %v, list2 = %v is excepted to %v but return %v", test.list1, test.list2, test.want, got)
+				t.Errorf("Test failed. The input list1 = %v, list2 = %v is expected to %v but return %v", test.list1, test.list2, test.want, got)
 			}
 		}
 	}

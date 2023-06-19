@@ -36,7 +36,7 @@ func TestFineCircleNum(t *testing.T) {
 
 	for _, test := range tests {
 		if got := findCircleNum(test.isConnected); got != test.want {
-			t.Errorf("Test failed. The input isConnected=%v is excepted to %d, but return %d", test.isConnected, test.want, got)
+			t.Errorf("Test failed. The input isConnected=%v is expected to %d, but return %d", test.isConnected, test.want, got)
 		}
 	}
 }

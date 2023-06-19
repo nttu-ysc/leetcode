@@ -37,7 +37,7 @@ func TestMinFlips(t *testing.T) {
 
 	for _, test := range tests {
 		if got := minFlips(test.a, test.b, test.c); got != test.want {
-			t.Errorf("Test failed. The input a=%d b=%d c=%d is excepted to %d but return %d", test.a, test.b, test.c, test.want, got)
+			t.Errorf("Test failed. The input a=%d b=%d c=%d is expected to %d but return %d", test.a, test.b, test.c, test.want, got)
 		}
 	}
 }

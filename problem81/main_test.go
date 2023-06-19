@@ -32,7 +32,7 @@ func TestSearch(t *testing.T) {
 
 	for _, test := range tests {
 		if got := search(test.nums, test.target); got != test.want {
-			t.Errorf("Test failed. The input nums=%v, target=%d  is excepted to %t but return %t", test.nums, test.target, test.want, got)
+			t.Errorf("Test failed. The input nums=%v, target=%d  is expected to %t but return %t", test.nums, test.target, test.want, got)
 		}
 	}
 }

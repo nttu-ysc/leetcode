@@ -22,7 +22,7 @@ func TestMinCost(t *testing.T) {
 
 	for _, test := range tests {
 		if got := minCost(test.n, test.cuts); got != test.want {
-			t.Errorf("Test failed. The input n=%d, cuts=%v is excepted to %d, but return %d", test.n, test.cuts, test.want, got)
+			t.Errorf("Test failed. The input n=%d, cuts=%v is expected to %d, but return %d", test.n, test.cuts, test.want, got)
 		}
 	}
 }

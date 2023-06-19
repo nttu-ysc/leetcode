@@ -27,7 +27,7 @@ func TestCountNegatives(t *testing.T) {
 
 	for _, test := range tests {
 		if got := countNegatives(test.grid); got != test.want {
-			t.Errorf("Test failed. The input grid=%v is excepted to %d, but return %d", test.grid, test.want, got)
+			t.Errorf("Test failed. The input grid=%v is expected to %d, but return %d", test.grid, test.want, got)
 		}
 	}
 

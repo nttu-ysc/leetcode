@@ -43,7 +43,7 @@ func TestCheckStraightLine(t *testing.T) {
 
 	for _, test := range tests {
 		if got := checkStraightLine(test.coordinates); got != test.want {
-			t.Errorf("Test failed. The input coordinates = %v is excepted to %t, but return %t", test.coordinates, test.want, got)
+			t.Errorf("Test failed. The input coordinates = %v is expected to %t, but return %t", test.coordinates, test.want, got)
 		}
 	}
 }

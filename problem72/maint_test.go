@@ -27,7 +27,7 @@ func TestMinDistance(t *testing.T) {
 
 	for _, test := range tests {
 		if got := minDistance(test.word1, test.word2); got != test.want {
-			t.Errorf("Test failed. The input word1=\"%s\" word2=\"%s\" is excepted to %d, but return %d", test.word1, test.word2, test.want, got)
+			t.Errorf("Test failed. The input word1=\"%s\" word2=\"%s\" is expected to %d, but return %d", test.word1, test.word2, test.want, got)
 		}
 	}
 

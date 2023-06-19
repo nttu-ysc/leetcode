@@ -27,7 +27,7 @@ func TestIsPalindrome(t *testing.T) {
 
 	for _, test := range tests {
 		if got := isPalindrome(test.x); got != test.want {
-			t.Errorf("Test failed. the input x=%d is excepted to %t but return %t", test.x, test.want, got)
+			t.Errorf("Test failed. the input x=%d is expected to %t but return %t", test.x, test.want, got)
 		}
 	}
 }

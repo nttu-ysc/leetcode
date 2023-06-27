@@ -23,6 +23,21 @@ func TestIsMatch(t *testing.T) {
 			p:    ".*",
 			want: true,
 		},
+		{
+			s:    "ab",
+			p:    ".*c",
+			want: false,
+		},
+		{
+			s:    "mississippi",
+			p:    "mis*is*p*.",
+			want: false,
+		},
+		{
+			s:    "mississippi",
+			p:    "mis*is*ip*.",
+			want: true,
+		},
 	}
 
 	for _, tC := range testCases {

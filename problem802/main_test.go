@@ -62,7 +62,7 @@ func TestEventualSafeNodes(t *testing.T) {
 	}
 
 	for _, tC := range testCases {
-		got := eventualSafeNodes(tC.graph)
+		got := eventualSafeNodes2(tC.graph)
 
 		if len(got) != len(tC.want) {
 			t.Errorf("Test failed. The graph = %v is expected to %v but return %v", tC.graph, tC.want, got)
